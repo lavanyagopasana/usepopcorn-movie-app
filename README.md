@@ -100,7 +100,3 @@ StarRating.js – Custom rating component.
 Searching requires at least 3 characters.
 
 Free OMDb API key has request limits (1,000/day).
-
-🛡 License
-
-This project is licensed under the MIT License.
