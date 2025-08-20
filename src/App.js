@@ -47,7 +47,7 @@ const tempWatchedData = [
   },
 ];
 
-const KEY='b6e16261'
+const KEY = process.env.REACT_APP_OMDB_KEY;
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -267,7 +267,7 @@ function  MovieDetails({selectedId, onCloseMovie, onAddWatched,watched}){
   const [userRating,setUserRating] = useState("")
 
   const iswatched = watched.map(movie=>movie.imdbID).includes(selectedId)
-  const watchedUserRating = watched.find(movie => movie.imdbID === selectedId)?. userRating
+  const watchedUserRating = watched.find(movie => movie.imdbID === selectedId)?.userRating
 
   console.log(iswatched)
   const {Title:title, Year : year , Poster :poster , Runtime :runtime , imdbRating ,Plot : plot,
